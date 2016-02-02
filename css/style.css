@@ -105,6 +105,11 @@ header {
   width: 40px;
 }
 
+.toggle-btn:hover,
+.close-btn:hover {
+  background-color: #ccc;
+}
+
 .toggle-btn:before,
 .close-btn:before {
   display: inline-block;
