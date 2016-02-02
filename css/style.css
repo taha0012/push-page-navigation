@@ -92,7 +92,7 @@ header {
 
 .navigation ul a:hover {
   color: #bc6028;
-  font-size: 120%;
+  font-style: italic;
 }
 
 .toggle-btn,
