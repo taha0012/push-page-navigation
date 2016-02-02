@@ -10,6 +10,7 @@ html {
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 	text-size-adjust: 100%;
+  background-color: $cream;
 }
 
 
@@ -17,6 +18,9 @@ html {
 	box-sizing: inherit;
 }
 
+h1{
+  color: $text-color;
+}
 
 body{
   font-family: sans-serif;
@@ -34,42 +38,55 @@ header {
 }
 
 .toggle-btn{
+
   position: absolute;
   right: 1em;
   top: 0;
 }
-
+.close-btn{
+  position: absolute;
+  left: 1em;
+  top: 0;
+}
 .navigation ul{
+  margin-top: 3em;
+  margin-left: 1em;
   padding: 0;
+  background: $white;
+  width: 10em;
+  padding: 1em;
+  border-radius: 20px;
+
     li{
       list-style-type: none;
-      &:first-child a{
-        border-top: 1px solid $light-grey;
-      }
+      text-align: center;
   }
   a{
-    background: red;
     display: inline-block;
-    width: 20em;
-    padding: .5em 1em;
-    border-bottom: 1px solid $light-grey;
+    padding: 1em 1em;
     text-decoration: none;
-    color: $text-color;
-    text-align: center;
+    color: $light-orange;
+    &:hover{
+      color: $text-color;
+      font-style: italic;
+    }
   }
 }
 
-
 .toggle-btn,
 .close-btn{
+  background-color: $white;
+  border-radius: 50px;
   color: $text-color;
   text-decoration: none;
   height: 40px;
   width: 40px;
+ &:hover{
+    background-color: $light-grey;
+  }
   &:before{
-    bodder: 1px solid $light-grey;
   display: inline-block;
-  padding: 13px 11px;
+  padding: 15px 11px;
   height: 40px;
   width: 40px;
   }
@@ -101,7 +118,7 @@ span{
     }
 
     &[data-state="slide-open"] .sliding-canvas{
-      transform: translateX(-90%);
+      transform: translateX(100%);
     }
     &[data-state="slide-open"]{
       overflow: visible;
@@ -114,7 +131,7 @@ span{
   //creates the offset of navigation
 position: absolute;
 width: 100%;
-right: -100%;
+right: 100%;
 top: 0;
 bottom: 0;
 height: 100%;
