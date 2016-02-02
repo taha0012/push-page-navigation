@@ -8,6 +8,7 @@ $('.toggle-btn, .close-btn').click(function(){
 
   });
 });
+
 function togglenav(){
   if($('.site-wrapper').attr('data-state') == 'slide-closed'){
 
