@@ -49,10 +49,6 @@ header {
   top: 0;
 }
 
-li img{
-        width: 3em;
-      }
-
 .navigation ul{
   margin-top: 3em;
   margin-left: 1em;
@@ -78,6 +74,9 @@ li img{
     }
   }
 }
+img{
+        width: 3em;
+      }
 
 .toggle-btn,
 .close-btn{
