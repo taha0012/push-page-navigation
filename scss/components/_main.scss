@@ -48,7 +48,9 @@ header {
   left: 1em;
   top: 0;
 }
-
+img{
+        width: 3em;
+      }
 .navigation ul{
   margin-top: 3em;
   margin-left: 1em;
@@ -62,9 +64,7 @@ header {
       list-style-type: none;
       text-align: center;
   }
-  img{
-        width: 3em;
-      }
+  
   a{
     display: inline-block;
     padding: 1em 1em;
